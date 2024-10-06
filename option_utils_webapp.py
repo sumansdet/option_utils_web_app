@@ -3,13 +3,15 @@ from bsm_opt_pricing import bsm_pricing_page
 from payout_chart import display_payoff_chart
 from capm_apt_future_price import display_capm_apt
 from position_sizing import display_position_size
+from option_price_analysis import analyze_option_price
 
 # Define a mapping of options to their respective display functions
 options = {
     "Black Scholes Pricing Model": bsm_pricing_page,
     "Options PayOff Chart": display_payoff_chart,
     "CAPM APT Future Price": display_capm_apt,
-    "Kelly Criterion - Position Sizing": display_position_size
+    "Kelly Criterion - Position Sizing": display_position_size,
+    "Analyse Option Pricing": analyze_option_price
 }
 
 
