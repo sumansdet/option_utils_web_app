@@ -48,7 +48,7 @@ def analyze_option_price():
         "Skewness (lambda_3)": 0.0,
         "Kurtosis (lambda_4)": 3.0,
         "Theta (theta)": 0.1,
-        "Difference": 5.0,
+        # "Difference": 5.0,
         "Expiration Date": datetime.today().date()  # Default to today's date
     }
 
@@ -62,8 +62,8 @@ def analyze_option_price():
     lambda_3 = st.number_input("Skewness (lambda_3)", value=params["Skewness (lambda_3)"])
     lambda_4 = st.number_input("Kurtosis (lambda_4)", value=params["Kurtosis (lambda_4)"])
     theta = st.number_input("Theta (theta)", value=params["Theta (theta)"])
-    difference = st.number_input("Difference", value=params["Difference"])
-
+  #  difference = st.number_input("Difference", value=params["Difference"])
+    difference = S - K
     # Date picker for expiration date
     expiration_date = st.date_input("Expiration Date", value=params["Expiration Date"])
 
